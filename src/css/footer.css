@@ -1,0 +1,29 @@
+footer {
+  /* background-color: black; */
+  height: 213px;
+  text-align: center;
+}
+
+.social-media-title {
+  margin-top: 0;
+  padding-top: 25px;
+  color: white;
+}
+
+.fab {
+  color: white;
+  padding: 3px;
+}
+
+.fab:hover {
+  color: #eb5e28;
+}
+
+.legal-links {
+  /* NO SALE ESTE TEXTO ??? */
+  color: red;
+}
+
+.legal-item {
+  color: blue;
+}

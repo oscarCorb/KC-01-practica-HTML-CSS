@@ -1,0 +1,50 @@
+:root {
+  --mobile-width: 300px;
+}
+
+.films-section {
+  background-color: #252422;
+  padding: 20px;
+  text-align: center;
+}
+
+.film-card {
+  /* 378 / 292 o 315/310*/
+  background-color: #403d39;
+  height: 245px;
+  max-width: var(--mobile-width);
+  margin-bottom: 16px;
+  border-radius: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.genre-filter-section {
+  background-color: #fffcf2;
+  color: #eb5e28;
+  height: 345px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.genre-btn {
+  margin: 0;
+  padding-top: 25px;
+  color: #403d39;
+  font-weight: bold;
+}
+
+/* TODO: Ampliar tamaño de la flecha */
+.arrow-filter {
+}
+
+.genre-title {
+  margin-top: 0;
+}
+
+.filtered-film {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-color: black;
+}

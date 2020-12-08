@@ -1,0 +1,60 @@
+:root {
+  --search-hamburger-heigth: 38px;
+}
+
+.logo-styles {
+  font-family: Phosphate, Georgia, "Times New Roman", Times, serif;
+  color: #252422;
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 10px;
+}
+
+header ul {
+  display: none;
+}
+
+header {
+  padding: 0 20px;
+}
+
+/* input and hamburger container */
+.flex-header-bar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--mobile-width);
+}
+
+.search-bar input {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 0 15px;
+  min-width: calc(var(--mobile-width) - 55px);
+}
+
+input:focus {
+  outline: none;
+}
+
+.search-bar {
+}
+
+/* burger menu container */
+.nav-bar {
+  background-color: #fffcf2;
+  min-width: 50px;
+  display: inline-block;
+  text-align: center;
+}
+
+.header-styles {
+  border: none;
+  border-radius: 10px 7px 0 0;
+  height: var(--search-hamburger-heigth);
+}
+
+.hamburger-menu-icon {
+  line-height: var(--search-hamburger-heigth);
+}

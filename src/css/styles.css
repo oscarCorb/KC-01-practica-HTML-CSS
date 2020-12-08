@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Phosphate;
+  src: ("../assets/fonts/phosphate.ttc");
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #ccc5b9;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: #eb5e28;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.material-icons {
+  color: #252422;
+  text-align: center;
+}
