@@ -7,7 +7,7 @@ footer {
 .social-media-title {
   margin-top: 0;
   padding-top: 25px;
-  color: white;
+  color: black;
 }
 
 .fab {
@@ -15,15 +15,12 @@ footer {
   padding: 3px;
 }
 
-.fab:hover {
-  color: #eb5e28;
+.legal-links li {
+  display: inline;
 }
 
-.legal-links {
-  /* NO SALE ESTE TEXTO ??? */
-  color: red;
-}
-
-.legal-item {
-  color: blue;
+li .legal-item {
+  color: black;
+  text-transform: uppercase;
+  font-size: 0.75rem;
 }

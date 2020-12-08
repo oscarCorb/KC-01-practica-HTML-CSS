@@ -2,7 +2,7 @@
   --search-hamburger-heigth: 38px;
 }
 
-.logo-styles {
+.logo {
   font-family: Phosphate, Georgia, "Times New Roman", Times, serif;
   color: #252422;
   font-size: 1.7rem;
@@ -16,10 +16,10 @@ header ul {
 }
 
 header {
-  padding: 0 20px;
+  padding: 20px 20px 0 20px;
 }
 
-/* input and hamburger container */
+/* CONTENEDOR de input & hamburger */
 .flex-header-bar {
   display: flex;
   justify-content: space-between;
@@ -27,11 +27,13 @@ header {
   max-width: var(--mobile-width);
 }
 
+/* caja de búsqueda */
 .search-bar input {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
   padding: 0 15px;
-  min-width: calc(var(--mobile-width) - 55px);
+  /* max-width: calc(var(--mobile-width) - 55px); */
+  width: 500px;
 }
 
 input:focus {

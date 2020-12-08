@@ -4,20 +4,46 @@
 
 .films-section {
   background-color: #252422;
+  display: flex;
+  justify-content: center;
+}
+
+.films-wrapper {
   padding: 20px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
 }
 
 .film-card {
-  /* 378 / 292 o 315/310*/
-  background-color: #403d39;
-  height: 245px;
-  max-width: var(--mobile-width);
+  display: flex;
+  /* Tamaño original */
+  /* height: 245px;
+  max-width: 240px; */
+  height: 319px;
+  max-width: 312px;
+
   margin-bottom: 16px;
   border-radius: 20px;
-  margin-left: auto;
-  margin-right: auto;
+  border-top: 37px solid #403d39;
+  border-right: 10px solid #403d39;
+  border-bottom: 37px solid #403d39;
+  border-left: 10px solid #403d39;
+  background-color: #403d39;
+  overflow: hidden;
+  /* box-shadow: 10px 10px 10px yellow; */
 }
+
+.film-card img {
+  border-radius: 20px;
+  /* object-fit: cover; */
+  object-position: center top;
+}
+
+/* .load-more-btn {
+  text-align: center;
+  padding-bottom: 30px;
+} */
 
 .genre-filter-section {
   background-color: #fffcf2;
@@ -48,3 +74,54 @@
   border-radius: 20px;
   background-color: black;
 }
+
+/* TODO: Ampliar tamaño de las flechas */
+.filtered-films-flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Screens > 480 px */
+@media (min-width: 480px) {
+  .logo {
+    color: yellow;
+  }
+
+  :root {
+    --mobile-width: 700px;
+  }
+
+  .films-section {
+    /* display: flex;
+    justify-content: center; */
+    /* margin: 0 auto; */
+  }
+
+  .films-wrapper {
+    flex-direction: row;
+    gap: 1.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .film-card {
+    /* height: 245px;
+    max-width: 240px; */
+  }
+
+  /* .load-more-btn {} */
+}
+
+/*
+ESTO NO SIRVE PARA DISPOSITIVOS TÁCTILES
+PERO SE PODRÁ USAR PARA ESCRITORIO
+=> los botones laterales de la peli filtrada se
+ponen grises y grandes al hacer hover
+
+.filtered-films-flex .material-icons {
+  padding: 80px 10px;
+}
+.filtered-films-flex .material-icons:hover {
+  background-color: grey;
+} */

@@ -22,12 +22,13 @@
     <!-- LOGO & NAVBAR -->
     <header>
 
-      <div id="logo" class="logo-styles">8MMOVIES</div>
+      <div id="logo" class="logo">8MMOVIES</div>
       
       <div class="flex-header-bar">
         <form class="search-bar">
           <input type="search" placeholder="search..." class="header-styles">
         </form>
+
         <div id="nav-bar" class="nav-bar header-styles">
           <span class="material-icons hamburger-menu-icon">menu</span>
 
@@ -38,6 +39,7 @@
           </ul>
         </div>
       </div>
+
     </header>
 
     <!-- MAIN SECTION -->
@@ -45,27 +47,56 @@
 
       <!-- Film list -->
       <section class="films-section">
-        <article class="film-card film-1">
-          <img src="" alt="">
-        </article>
-        <article class="film-card film-2">
-          <img src="" alt="">
-        </article>
-        <article class="film-card film-3">
-          <img src="" alt="">
-        </article>
-        <a class="load-more-btn" href="">Load more</a>
+        <div class="films-wrapper">
+          <article class="film-card film-1">
+              <img src="./assets/img/resized/1984.jpg" alt="">
+          </article>
+          <article class="film-card film-2">
+            <img src="./assets/img/resized/Casablanca.jpg" alt="">
+          </article>
+          <article class="film-card film-3">
+            <img src="./assets/img/resized/Citizen Kane.jpg" alt="">
+          </article>
+          <article class="film-card film-4">
+            <img src="./assets/img/resized/Metropolis.jpg" alt="">
+          </article>
+          <article class="film-card film-5">
+            <img src="./assets/img/resized/Modern Times.jpg" alt="">
+          </article>
+          <article class="film-card film-6">
+            <img src="./assets/img/resized/GoneWithTheWind.jpg" alt="">
+          </article>
+          <article class="film-card film-7">
+            <img src="./assets/img/resized/1984.jpg" alt="">
+          </article>
+          <article class="film-card film-8">
+            <img src="./assets/img/resized/Casablanca.jpg" alt="">
+          </article>
+        </div>
       </section>
+
+      <!-- <div class="load-more-btn">
+        <a href="">Load more</a>
+      </div> -->
 
       <!-- Genre filter -->
       <section class="genre-filter-section">
         <p class="genre-btn">Genre filter</p>
         <span class="material-icons arrow-filter">arrow_drop_down</span>
         <p class="genre-title">Futuristic</p>
-        <div class="filtered-films"></div>
-        <a href="">
-          <img src="" alt="" class="filtered-film">
-        </a>
+
+        <div class="filtered-films-flex">
+          <a href="">
+            <span class="material-icons filter-arrow-left">arrow_left</span>
+          </a>
+          <a href="">
+            <img src="" alt="" class="filtered-film">
+          </a>
+          <a href="">
+            <span class="material-icons filter-arrow-right">arrow_right</span>
+          </a>
+        </div>
+
       </section>
     </main>
 
@@ -79,13 +110,12 @@
         <a href=""><i class="fab fa-2x fa-twitter"></i></a>
       </div>
 
-      <p class="logo-styles">- The end -</p>
+      <p class="logo">- The end -</p>
       
       <div class="legal-links">
         <ul>
-          <li class="legal-item"><a href="">Terms of use</a></li>
-          <li><a href="" class="legal-item">Privacy Policy</a></li>
-          <li><a href="" class="legal-item">Cookies</a></li>
+          <li><a href="" class="legal-item">Terms of use</a></li>
+          <li><a href="" class="legal-item">Privacy policy</a></li>
         </ul>
       </div>
       
