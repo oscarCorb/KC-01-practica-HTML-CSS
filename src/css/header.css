@@ -27,6 +27,7 @@
   font-size: 1rem;
   padding: 0 15px;
   width: calc(var(--one-card-width) - 55px);
+  margin-right: 5px;
 }
 
 input:focus {
@@ -34,6 +35,7 @@ input:focus {
 }
 
 .search-bar {
+  /* width: calc(var(--one-card-width) - 55px); */
 }
 
 /* burger menu container */

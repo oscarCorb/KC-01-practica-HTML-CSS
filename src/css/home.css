@@ -42,8 +42,8 @@
   position: absolute;
   top: 4px;
   right: 4px;
-  color: red;
-  font-size: 40px;
+  color: #eb5e28;
+  font-size: 35px;
 }
 
 .star-circle {
@@ -51,7 +51,7 @@
   top: 0;
   right: 0;
   color: white;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 /* .load-more-btn {
@@ -97,34 +97,15 @@
 }
 
 /* Screens > 480 px */
-@media (min-width: 480px) {
-  .logo {
-    color: yellow;
-  }
+/* @media (min-width: 480px) { */
 
-  :root {
-    /* --mobile-width: 700px; */
-  }
-
-  .films-section {
-    /* display: flex;
-    justify-content: center; */
-    /* margin: 0 auto; */
-  }
-
+@media (min-width: 684px) {
   .films-wrapper {
     flex-direction: row;
     gap: 19px;
     justify-content: center;
     flex-wrap: wrap;
   }
-
-  .film-card {
-    /* height: 245px;
-    max-width: 240px; */
-  }
-
-  /* .load-more-btn {} */
 }
 
 /*
