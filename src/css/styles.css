@@ -2,6 +2,8 @@
   /* --mobile-width: 300px; */
   --one-card-width: 312px;
   --two-cards-width: 643px;
+  --three-cards-width: 973px;
+  --color-orange: #eb5e28;
 }
 
 @font-face {
@@ -20,7 +22,7 @@ body {
 a,
 a:visited {
   text-decoration: none;
-  color: #eb5e28;
+  color: var(--color-orange);
 }
 
 a:hover {

@@ -1,6 +1,6 @@
 :root {
   --navbar-mobile-heigth: 38px;
-  --navbar-tablet-heigth: 70px;
+  --navbar-tablet-heigth: 66px;
 }
 
 .header-section {
@@ -17,7 +17,7 @@
 }
 
 /* CONTENEDOR de input & hamburger */
-.header-bar-wrapper {
+.navbar-wrapper-tactile {
   display: flex;
   justify-content: center;
 }
@@ -35,12 +35,8 @@ input:focus {
   outline: none;
 }
 
-.search-bar {
-  /* width: calc(var(--one-card-width) - 55px); */
-}
-
 /* burger menu container */
-.nav-bar {
+.nav-bar-tactile {
   background-color: #fffcf2;
   min-width: 50px;
   display: inline-block;
@@ -61,7 +57,7 @@ input:focus {
   line-height: var(--navbar-mobile-heigth);
 }
 
-header ul {
+.navbar-wrapper-desktop {
   display: none;
 }
 
@@ -76,32 +72,79 @@ header ul {
     width: calc(var(--two-cards-width) - 135px);
   }
 
-  .nav-bar {
+  .nav-bar-tactile {
     min-width: 130px;
     display: flex;
     justify-content: space-evenly;
-    /* flex-direction: row; */
-    /* padding: calc(var(--navbar-tablet-heigth) / 2); */
-    /* justify-content: baseline; */
   }
 
   .menu-text {
     display: inline;
-    /* align-self: baseline; */
-    /* line-height: 70px; */
     line-height: var(--navbar-tablet-heigth);
   }
 
   .hamburger-menu-icon {
     line-height: var(--navbar-tablet-heigth);
-
-    /* display: inline;
-    align-self: baseline; */
   }
-
-  /* header ul {
-    display: initial;
-  } */
 }
 
 /* siguiente: 1014px (3 tarjetas) */
+
+@media (min-width: 1014px) {
+  .nav-bar-tactile {
+    display: none;
+  }
+
+  .navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* width: var(--three-cards-width); */
+  }
+
+  .search-bar input {
+    width: calc(var(--three-cards-width) - 525px);
+  }
+
+  /* ojo, esto no coge el input, solo los botones */
+  .navbar-wrapper-desktop {
+    display: initial;
+  }
+
+  .navbar-wrapper-desktop ul {
+    display: flex;
+    /* esto mejora algo la medida del navbar */
+    padding-left: 0;
+  }
+
+  .navbar-wrapper-desktop li {
+    display: inline;
+    width: 165px;
+    text-align: center;
+    background-color: #fffcf2;
+    margin-left: 10px;
+  }
+
+  .navbar-wrapper-desktop li.navbar-btn-fav {
+    color: #fff;
+    background-color: var(--color-orange);
+  }
+
+  .navbar-wrapper-desktop a {
+    line-height: var(--navbar-tablet-heigth);
+    color: #252422;
+    text-align: center;
+
+    padding-top: calc(var(--navbar-tablet-heigth) / 2);
+    padding-bottom: calc(var(--navbar-tablet-heigth) / 2);
+
+    /* Esto es un poco chapucero pero no he encontrado otra
+    forma para que el ancho de los botones sea clickable */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .navbar-wrapper-desktop .navbar-btn-fav > a {
+    color: #fff;
+  }
+}

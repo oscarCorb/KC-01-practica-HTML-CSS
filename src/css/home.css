@@ -42,7 +42,7 @@
   position: absolute;
   top: 4px;
   right: 4px;
-  color: #eb5e28;
+  color: var(--color-orange);
   font-size: 35px;
 }
 
@@ -61,7 +61,7 @@
 
 .genre-filter-section {
   background-color: #fffcf2;
-  color: #eb5e28;
+  color: var(--color-orange);
   height: 345px;
   text-transform: uppercase;
   text-align: center;
