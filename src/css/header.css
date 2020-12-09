@@ -1,5 +1,6 @@
 :root {
-  --search-hamburger-heigth: 38px;
+  --navbar-mobile-heigth: 38px;
+  --navbar-tablet-heigth: 70px;
 }
 
 .header-section {
@@ -49,11 +50,15 @@ input:focus {
 .header-styles {
   border: none;
   border-radius: 10px 7px 0 0;
-  height: var(--search-hamburger-heigth);
+  height: var(--navbar-mobile-heigth);
+}
+
+.menu-text {
+  display: none;
 }
 
 .hamburger-menu-icon {
-  line-height: var(--search-hamburger-heigth);
+  line-height: var(--navbar-mobile-heigth);
 }
 
 header ul {
@@ -63,13 +68,40 @@ header ul {
 /* el problema es que el salto de 1 a 2 tarjetas está en 684px */
 /* @media (min-width: 480px) {} */
 @media (min-width: 684px) {
-  .search-bar input {
-    width: calc(var(--two-cards-width) - 55px);
+  .header-styles {
+    height: var(--navbar-tablet-heigth);
   }
 
-  header ul {
-    display: initial;
+  .search-bar input {
+    width: calc(var(--two-cards-width) - 135px);
   }
+
+  .nav-bar {
+    min-width: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+    /* padding: calc(var(--navbar-tablet-heigth) / 2); */
+    /* justify-content: baseline; */
+  }
+
+  .menu-text {
+    display: inline;
+    /* align-self: baseline; */
+    /* line-height: 70px; */
+    line-height: var(--navbar-tablet-heigth);
+  }
+
+  .hamburger-menu-icon {
+    line-height: var(--navbar-tablet-heigth);
+
+    /* display: inline;
+    align-self: baseline; */
+  }
+
+  /* header ul {
+    display: initial;
+  } */
 }
 
 /* siguiente: 1014px (3 tarjetas) */
