@@ -62,7 +62,7 @@
 .genre-filter-section {
   background-color: #fffcf2;
   color: var(--color-orange);
-  height: 430px;
+  height: 450px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -105,6 +105,10 @@
   display: none;
 }
 
+.genre-list {
+  display: none;
+}
+
 /* Screens > 480 px */
 /* @media (min-width: 480px) { */
 
@@ -115,6 +119,49 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 30px;
+  }
+
+  .genre-filter-mobile {
+    display: none;
+  }
+
+  .genre-filter-section {
+    height: 370px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .genre-list {
+    display: initial;
+    margin: 44px 0;
+  }
+
+  .genre-list ul {
+    margin: 0;
+    height: 280px;
+    width: 278px;
+    padding: 0 100px;
+  }
+
+  .genre-list a {
+    display: flex;
+    align-content: space-between;
+    padding: 6px 0;
+  }
+
+  .genre-list li {
+    /* esto quita los bullets points */
+    display: inline;
+    color: #403d39;
+    font-size: 1.5rem;
+  }
+
+  .genre-list a:first-child {
+    font-weight: bold;
+  }
+
+  #test-orange {
+    color: var(--color-orange);
   }
 }
 
