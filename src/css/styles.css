@@ -1,3 +1,9 @@
+:root {
+  /* --mobile-width: 300px; */
+  --one-card-width: 312px;
+  --two-cards-width: 643px;
+}
+
 @font-face {
   font-family: Phosphate;
   src: ("../assets/fonts/phosphate.ttc");

@@ -2,6 +2,10 @@
   --search-hamburger-heigth: 38px;
 }
 
+.header-section {
+  padding: 20px 20px 0 20px;
+}
+
 .logo {
   font-family: Phosphate, Georgia, "Times New Roman", Times, serif;
   color: #252422;
@@ -11,20 +15,10 @@
   margin-bottom: 10px;
 }
 
-header ul {
-  display: none;
-}
-
-header {
-  padding: 20px 20px 0 20px;
-}
-
 /* CONTENEDOR de input & hamburger */
-.flex-header-bar {
+.header-bar-wrapper {
   display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: var(--mobile-width);
+  justify-content: center;
 }
 
 /* caja de búsqueda */
@@ -32,8 +26,7 @@ header {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
   padding: 0 15px;
-  /* max-width: calc(var(--mobile-width) - 55px); */
-  width: 500px;
+  width: calc(var(--one-card-width) - 55px);
 }
 
 input:focus {
@@ -60,3 +53,21 @@ input:focus {
 .hamburger-menu-icon {
   line-height: var(--search-hamburger-heigth);
 }
+
+header ul {
+  display: none;
+}
+
+/* el problema es que el salto de 1 a 2 tarjetas está en 684px */
+/* @media (min-width: 480px) {} */
+@media (min-width: 684px) {
+  .search-bar input {
+    width: calc(var(--two-cards-width) - 55px);
+  }
+
+  header ul {
+    display: initial;
+  }
+}
+
+/* siguiente: 1014px (3 tarjetas) */
