@@ -22,15 +22,20 @@ body {
 a,
 a:visited {
   text-decoration: none;
-  color: var(--color-orange);
+  /* color: var(--color-orange); */
 }
 
 a:hover {
   text-decoration: underline;
   cursor: pointer;
+  color: var(--color-orange);
 }
 
 .material-icons {
   color: #252422;
   text-align: center;
+}
+
+.social-icons i:hover {
+  color: var(--color-orange);
 }

@@ -62,7 +62,7 @@
 .genre-filter-section {
   background-color: #fffcf2;
   color: var(--color-orange);
-  height: 345px;
+  height: 430px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -74,9 +74,13 @@
   font-weight: bold;
 }
 
-/* TODO: Ampliar tamaño de la flecha */
-.arrow-filter {
+[class*="arrow"] {
+  font-size: 3rem;
 }
+
+/* .arrow-filter {
+  font-size: 2.5rem;
+} */
 
 .genre-title {
   margin-top: 0;
@@ -94,6 +98,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.genre-film-2,
+.genre-film-3 {
+  display: none;
 }
 
 /* Screens > 480 px */
