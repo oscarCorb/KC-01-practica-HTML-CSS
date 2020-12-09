@@ -23,9 +23,9 @@
   margin-bottom: 16px;
   border-radius: 20px;
   border-top: 37px solid #403d39;
-  border-right: 10px solid #403d39;
   border-bottom: 37px solid #403d39;
   border-left: 10px solid #403d39;
+  border-right: 10px solid #403d39;
   background-color: #403d39;
   overflow: hidden;
   position: relative;
@@ -33,8 +33,11 @@
 }
 
 .film-card img {
+  width: 100%;
+  height: 100%;
   border-radius: 20px;
   /* object-fit: cover; */
+  /* creo que esto no tiene ningún efecto => */
   object-position: center top;
 }
 
@@ -93,7 +96,6 @@
   background-color: black;
 }
 
-/* TODO: Ampliar tamaño de las flechas */
 .filtered-films-flex {
   display: flex;
   justify-content: space-around;
@@ -109,10 +111,9 @@
   display: none;
 }
 
-/* Screens > 480 px */
 /* @media (min-width: 480px) { */
-
 @media (min-width: 684px) {
+  /* SECTION: LISTA DE PELÍCULAS */
   .films-wrapper {
     flex-direction: row;
     gap: 19px;
@@ -121,6 +122,57 @@
     padding-top: 30px;
   }
 
+  .film-card img {
+    /* position: relative; */
+    /* z-index: 0; */
+
+    /* ESTILOS MOBILE
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-position: center top; */
+  }
+
+  .film-card {
+    position: relative;
+  }
+
+  .film-info {
+    position: absolute;
+    color: #fff;
+    font-size: 1rem;
+    width: calc(var--(--one-card-width) - 20px);
+    max-height: 245px;
+    overflow: scroll;
+    line-height: 1;
+    border-radius: 20px;
+    padding: 0 25px;
+
+    /* transition */
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .film-card:hover .film-info {
+    opacity: 1;
+    visibility: visible;
+    cursor: pointer;
+
+    color: black;
+    background-color: #fff;
+  }
+
+  .film-card:hover img {
+    visibility: hidden;
+  }
+
+  .film-info-text {
+    /* 
+    overflow: hidden; */
+  }
+
+  /* SECCIÓN: GENRE FILTER */
   .genre-filter-mobile {
     display: none;
   }
@@ -140,7 +192,7 @@
     margin: 0;
     height: 280px;
     width: 278px;
-    padding: 0 100px;
+    padding: 0 102px;
   }
 
   .genre-list a {
@@ -156,8 +208,16 @@
     font-size: 1.5rem;
   }
 
-  .genre-list a:first-child {
+  /* .genre-list a:first-child {
     font-weight: bold;
+  } */
+
+  .genre-title {
+    font-weight: bold;
+    color: black;
+    font-size: 1.5rem;
+    padding-bottom: 6px;
+    margin: 0;
   }
 
   #test-orange {
