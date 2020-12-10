@@ -1,7 +1,6 @@
 /* FILM CONTAINER */
 .film-wrapper {
   background-color: var(--color-black-magic);
-  /* height: 200px; */
 }
 
 .film-title {
@@ -10,7 +9,7 @@
   color: var(--color-floral-white);
 }
 
-/* film player-tv */
+/* film player */
 .film-player {
   display: flex;
   justify-content: center;
@@ -51,20 +50,19 @@
 /* rate icon */
 .film-rate-circle-btn {
   position: absolute;
-  top: 271px;
-  right: 258px;
+  bottom: 15px;
+  left: 17px;
 
   height: 37px;
   width: 37px;
   border-radius: 50%;
-
   background: var(--color-floral-white);
 }
 
 .film-rate-number-btn {
   position: absolute;
-  top: 281px;
-  right: 262px;
+  bottom: 23px;
+  left: 21px;
 }
 
 .film-buttons {
@@ -75,19 +73,25 @@
   position: absolute;
   top: 272px;
   right: 210px;
+  /* bottom: 0px;
+  left: 0px; */
 }
 
 .star-circle {
   position: absolute;
   top: 267px;
   right: 205px;
+  /* bottom: 0px;
+  left: 0px; */
+  color: var(--color-floral-white);
 }
 
 /* play icon */
 .film-play-btn {
   position: absolute;
-  top: 274px;
   right: 16px;
+  bottom: 7px;
+
   font-size: 35px;
   color: var(--color-floral-white);
 }
@@ -142,3 +146,77 @@ th {
 .related-film-4 {
   display: none;
 }
+
+/* TABLET */
+@media (min-width: 684px) {
+  .film-player-border-outer {
+    width: var(--two-cards-width);
+
+    /*     
+    viejo   
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 323px;
+    width: var(--one-card-width);
+    background-color: var(--color-space-shuttle);
+    position: relative; */
+  }
+
+  .film-player-border-inner {
+    width: calc(var(--two-cards-width) - 20px);
+  }
+
+  .related-films {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1rem; */
+  }
+
+  .filter-arrow-left,
+  .filter-arrow-right {
+    line-height: 50px;
+    height: 50px;
+    margin: 0 10px;
+    background-color: #ccc5b9;
+  }
+
+  .related-film-2,
+  .related-film-3 {
+    display: initial;
+  }
+
+  .related-film-item {
+    border-radius: 25px;
+    padding: 0.5rem;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1014px) {
+  .related-film-4 {
+    display: initial;
+  }
+}
+
+/* lo viejo de arriba */
+
+/*
+.film-player-border-inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  border-radius: 20px;
+  height: 246px;
+  width: calc(var(--one-card-width) - 20px);
+  background-color: var(--color-black-magic);
+}
+
+.film-player-img {
+  margin: 7px;
+  border-radius: 15px;
+  width: calc(var(--one-card-width) - 30px);
+  overflow: hidden;
+}
+
+/* FILM ICONS */

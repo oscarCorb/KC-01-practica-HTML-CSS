@@ -23,14 +23,16 @@
     <!-- LOGO & NAVBAR -->
     <header class="header-section">
 
-      <div id="logo" class="logo">8MMOVIES</div>
+      <a href="/">
+        <div id="logo" class="logo">8MMOVIES</div>
+      </a>
 
       <div class="my-account">
         <span class="material-icons my-account-icon">account_circle</span>
         <span class="my-account-logout">Log out</span>
       </div>
 
-      <div class="navbar-wrapper">
+      <nav class="navbar-wrapper">
 
         <div class="navbar-wrapper-tactile">
           <form class="search-bar">
@@ -45,14 +47,14 @@
           
         <div class="navbar-wrapper-desktop header-styles">
           <ul>
-            <li class="header-styles navbar-btn"><a href="">Movies</a></li>
+            <li class="header-styles navbar-btn-fav" id="test-btn-encendido"><a href="">Movies</a></li>
             <li class="header-styles navbar-btn"><a href="">Serials</a></li>
-            <li class="header-styles navbar-btn-fav"><a href="">Favourites</a></li>
+            <li class="header-styles navbar-btn"><a href="">Favourites</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
       
-
+<!-- TODO: FALTAN ENCABEZADOS H1, H2, H3... -->
     </header>
 
     <!-- MAIN SECTION -->
@@ -77,7 +79,9 @@
             </div>
           </article>
           <article class="film-card film-2">
-            <img src="./assets/img/resized/Casablanca.jpg" alt="">
+            <a href="/pages/product-page.html">
+              <img src="./assets/img/resized/Casablanca.jpg" alt="">
+            </a>
           </article>
           <article class="film-card film-3">
             <img src="./assets/img/resized/Citizen Kane.jpg" alt="">

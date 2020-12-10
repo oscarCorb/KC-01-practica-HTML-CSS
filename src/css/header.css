@@ -154,11 +154,6 @@ input:focus {
     margin-left: 10px;
   }
 
-  .navbar-wrapper-desktop li.navbar-btn-fav {
-    color: #fff;
-    background-color: var(--color-orange);
-  }
-
   .navbar-wrapper-desktop a {
     line-height: var(--navbar-tablet-heigth);
     color: #252422;
@@ -175,5 +170,9 @@ input:focus {
 
   .navbar-wrapper-desktop .navbar-btn-fav > a {
     color: #fff;
+  }
+
+  #test-btn-encendido {
+    background-color: var(--color-orange);
   }
 }
