@@ -119,3 +119,26 @@ th {
 }
 
 /* RELATED FILMS */
+.related-title {
+  background-color: var(--color-floral-white);
+}
+
+.related-films-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-floral-white);
+  padding-bottom: 35px;
+}
+
+.related-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.related-film-2,
+.related-film-3,
+.related-film-4 {
+  display: none;
+}

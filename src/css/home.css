@@ -97,7 +97,7 @@
   background-color: black;
 }
 
-.filtered-films-flex {
+.filtered-films-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -232,9 +232,9 @@ PERO SE PODRÁ USAR PARA ESCRITORIO
 => los botones laterales de la peli filtrada se
 ponen grises y grandes al hacer hover
 
-.filtered-films-flex .material-icons {
+.filtered-films-wrapper .material-icons {
   padding: 80px 10px;
 }
-.filtered-films-flex .material-icons:hover {
+.filtered-films-wrapper .material-icons:hover {
   background-color: grey;
 } */
