@@ -91,3 +91,31 @@
   font-size: 35px;
   color: var(--color-floral-white);
 }
+
+/* FILM INFO */
+
+/* film details */
+.film-info {
+  display: flex;
+  justify-content: center;
+  color: var(--color-floral-white);
+}
+
+table {
+  padding: 10px 20px;
+}
+
+th {
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 5px;
+}
+
+/* synopsis */
+.film-synopsis {
+  padding: 10px 20px;
+  color: var(--color-floral-white);
+}
+
+/* RELATED FILMS */
