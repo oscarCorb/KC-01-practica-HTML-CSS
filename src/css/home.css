@@ -37,6 +37,7 @@
   height: 100%;
   border-radius: 20px;
   /* object-fit: cover; */
+
   /* creo que esto no tiene ningún efecto => */
   object-position: center top;
 }
