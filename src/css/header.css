@@ -3,10 +3,12 @@
   --navbar-tablet-heigth: 66px;
 }
 
+/* HEADER */
 .header-section {
   padding: 20px 20px 0 20px;
 }
 
+/* LOGO */
 .logo {
   font-family: Phosphate, Georgia, "Times New Roman", Times, serif;
   color: #252422;
@@ -16,13 +18,18 @@
   margin-bottom: 10px;
 }
 
-/* CONTENEDOR de input & hamburger */
+/* MY ACCOUNT ICON */
+.my-account {
+  display: none;
+}
+
+/* SEARCH BAR + NAVIGATION MENU */
 .navbar-wrapper-tactile {
   display: flex;
   justify-content: center;
 }
 
-/* caja de búsqueda */
+/* search bar */
 .search-bar input {
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
@@ -35,7 +42,7 @@ input:focus {
   outline: none;
 }
 
-/* burger menu container */
+/* navigation menu */
 .nav-bar-tactile {
   background-color: #fffcf2;
   min-width: 50px;
@@ -61,17 +68,24 @@ input:focus {
   display: none;
 }
 
-/* el problema es que el salto de 1 a 2 tarjetas está en 684px */
-/* @media (min-width: 480px) {} */
+/* TABLET */
 @media (min-width: 684px) {
+  /* MY ACCOUNT ICON */
+  .my-account {
+    display: none;
+  }
+
+  /* SEARCH BAR + NAVIGATION MENU */
   .header-styles {
     height: var(--navbar-tablet-heigth);
   }
 
+  /* search bar */
   .search-bar input {
     width: calc(var(--two-cards-width) - 135px);
   }
 
+  /* navigation menu */
   .nav-bar-tactile {
     min-width: 130px;
     display: flex;
@@ -88,9 +102,23 @@ input:focus {
   }
 }
 
-/* siguiente: 1014px (3 tarjetas) */
-
+/* DESKTOP */
 @media (min-width: 1014px) {
+  /* MY ACCOUNT ICON */
+  .my-account {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    display: flex;
+    align-items: center;
+  }
+
+  .my-account-icon {
+    padding-right: 10px;
+    font-size: 1.8rem;
+  }
+
+  /* SEARCH BAR + NAVIGATION MENU */
   .nav-bar-tactile {
     display: none;
   }
@@ -102,10 +130,12 @@ input:focus {
     /* width: var(--three-cards-width); */
   }
 
+  /* search bar */
   .search-bar input {
     width: calc(var(--three-cards-width) - 525px);
   }
 
+  /* navigation menu */
   .navbar-wrapper-desktop {
     /* ojo, esto son solo los botones, sin el input */
     display: initial;
