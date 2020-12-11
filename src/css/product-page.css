@@ -19,7 +19,7 @@
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  height: 323px;
+  height: 283px;
   width: var(--one-card-width);
   background-color: var(--color-space-shuttle);
   position: relative;
@@ -30,7 +30,7 @@
   justify-content: center;
   margin-top: 10px;
   border-radius: 20px;
-  height: 246px;
+  height: 196px;
   width: calc(var(--one-card-width) - 20px);
   /* temp color */
   /* background-color: white; */
@@ -48,7 +48,7 @@
 /* vídeo */
 .film-player-video {
   position: absolute;
-  top: 51px;
+  top: 26px;
   padding: 0 10px;
 }
 
@@ -174,19 +174,21 @@ td {
 
   /* film player */
   .film-player-border-outer {
-    height: 573px;
+    /* origianl 323 */
+    height: 473px;
     width: var(--two-cards-width);
   }
 
   .film-player-border-inner {
-    height: 496px;
+    /* origianl 246 */
+    height: 396px;
 
     width: calc(var(--two-cards-width) - 20px);
   }
 
   /* vídeo */
   .film-player-video {
-    top: 83px;
+    top: 33px;
   }
 
   /* film details */
