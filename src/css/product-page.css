@@ -38,7 +38,9 @@
 }
 
 .film-player-img {
-  margin: 7px;
+  /* margin: 7px; */
+  /* 16px queda bien arriba */
+  margin: 16px 8px 0px 8px;
   border-radius: 15px;
   width: calc(var(--one-card-width) - 30px);
   /* nota: overflow necesario para que border-radius funcione */
@@ -179,6 +181,16 @@ td {
     width: calc(var(--two-cards-width) - 20px);
   }
 
+  .film-player-img {
+    width: 100%;
+    margin: 23px 8px 0px 8px;
+
+    /* margin: 16px 8px 0px 8px;
+    border-radius: 15px;
+    width: calc(var(--one-card-width) - 30px);
+    overflow: hidden; */
+  }
+
   /* vídeo */
   .film-player-video {
     top: 33px;
@@ -259,6 +271,16 @@ td {
   .film-details,
   .film-synopsis {
     width: var(--three-cards-width);
+  }
+
+  .film-player-img {
+    width: 100%;
+    margin: 35px 15px 0px 15px;
+
+    /* margin: 16px 8px 0px 8px;
+    border-radius: 15px;
+    width: calc(var(--one-card-width) - 30px);
+    overflow: hidden; */
   }
 
   /* RELATED SECTION */
