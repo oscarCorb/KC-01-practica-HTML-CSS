@@ -19,8 +19,6 @@
   display: flex;
   justify-content: center;
   border-radius: 20px;
-  /* original 323 */
-  /* height: 281px; */
   height: 323px;
   width: var(--one-card-width);
   background-color: var(--color-space-shuttle);
@@ -32,13 +30,9 @@
   justify-content: center;
   margin-top: 10px;
   border-radius: 20px;
-  /* original 246  */
-  /* ahora 218 */
-  /* height: 204px; */
   height: 246px;
   width: calc(var(--one-card-width) - 20px);
-  /* background-color: var(--color-black-magic); */
-  /* temp color test */
+  /* temp color */
   /* background-color: white; */
   background-color: black;
 }
@@ -180,14 +174,11 @@ td {
 
   /* film player */
   .film-player-border-outer {
-    /* original 323 */
-
     height: 573px;
     width: var(--two-cards-width);
   }
 
   .film-player-border-inner {
-    /* original 246  */
     height: 496px;
 
     width: calc(var(--two-cards-width) - 20px);
@@ -249,6 +240,22 @@ td {
 @media (min-width: 1014px) {
   .logo {
     color: greenyellow;
+  }
+
+  /* film player */
+  .film-player-border-outer {
+    height: 683px;
+    width: var(--three-cards-width);
+  }
+
+  .film-player-border-inner {
+    height: 606px;
+    width: calc(var(--three-cards-width) - 20px);
+  }
+
+  /* vídeo */
+  .film-player-video {
+    top: 45px;
   }
 
   /* RELATED SECTION */
