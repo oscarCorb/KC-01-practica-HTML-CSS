@@ -69,8 +69,8 @@
 
 .film-rate-number-btn {
   position: absolute;
-  bottom: 23px;
-  left: 21px;
+  bottom: 25px;
+  left: 23px;
 }
 
 /* favourite/star icon */
@@ -94,8 +94,8 @@
 .film-play-btn {
   position: absolute;
   right: 16px;
-  bottom: 7px;
-  font-size: 35px;
+  bottom: 12px;
+  font-size: 39px;
   color: var(--color-floral-white);
 }
 
@@ -159,10 +159,6 @@ td {
 
 /* TABLET */
 @media (min-width: 684px) {
-  .logo {
-    color: violet;
-  }
-
   /* FILM CONTAINER */
   .film-wrapper {
   }
@@ -183,12 +179,7 @@ td {
 
   .film-player-img {
     width: 100%;
-    margin: 23px 8px 0px 8px;
-
-    /* margin: 16px 8px 0px 8px;
-    border-radius: 15px;
-    width: calc(var(--one-card-width) - 30px);
-    overflow: hidden; */
+    margin: 23px 11px 0px 11px;
   }
 
   /* vídeo */
@@ -247,10 +238,6 @@ td {
 
 /* DESKTOP */
 @media (min-width: 1014px) {
-  .logo {
-    color: greenyellow;
-  }
-
   /* film player */
   .film-player-border-outer {
     height: 683px;
@@ -276,11 +263,6 @@ td {
   .film-player-img {
     width: 100%;
     margin: 35px 15px 0px 15px;
-
-    /* margin: 16px 8px 0px 8px;
-    border-radius: 15px;
-    width: calc(var(--one-card-width) - 30px);
-    overflow: hidden; */
   }
 
   /* RELATED SECTION */
