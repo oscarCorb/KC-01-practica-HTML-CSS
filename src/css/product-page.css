@@ -99,30 +99,38 @@
 /* FILM INFO */
 
 /* film details */
-.film-info {
+.film-details {
+  /* +++ */
   display: flex;
   justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: var(--one-card-width);
   color: var(--color-floral-white);
 }
 
 table {
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 th {
   text-align: left;
   display: flex;
   align-items: flex-start;
-  padding-bottom: 5px;
+  padding-right: 5px;
+}
+
+td {
+  padding-bottom: 10px;
 }
 
 /* synopsis */
 .film-synopsis {
-  padding: 10px 20px;
+  padding: 10px 10px;
   color: var(--color-floral-white);
 }
 
-/* RELATED FILMS */
+/* RELATED SECTION */
 .related-title {
   background-color: var(--color-floral-white);
 }
@@ -149,24 +157,46 @@ th {
 
 /* TABLET */
 @media (min-width: 684px) {
+  .logo {
+    color: violet;
+  }
+
+  /* FILM CONTAINER */
+  .film-wrapper {
+  }
+
+  /* film player */
   .film-player-border-outer {
     width: var(--two-cards-width);
-
-    /*     
-    viejo   
-    display: flex;
-    justify-content: center;
-    border-radius: 20px;
-    height: 323px;
-    width: var(--one-card-width);
-    background-color: var(--color-space-shuttle);
-    position: relative; */
   }
 
   .film-player-border-inner {
     width: calc(var(--two-cards-width) - 20px);
   }
 
+  /* film details */
+  .film-details {
+    /* +++ */
+    margin-left: auto;
+    margin-right: auto;
+    width: var(--two-cards-width);
+
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  th {
+    padding-right: 20px;
+  }
+
+  /* synopsis */
+  .film-synopsis {
+    width: var(--two-cards-width);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* RELATED SECTION */
   .related-films {
     display: flex;
     justify-content: space-between;
@@ -194,6 +224,11 @@ th {
 
 /* DESKTOP */
 @media (min-width: 1014px) {
+  .logo {
+    color: greenyellow;
+  }
+
+  /* RELATED SECTION */
   .related-film-4 {
     display: initial;
   }
