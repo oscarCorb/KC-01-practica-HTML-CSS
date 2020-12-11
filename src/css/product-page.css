@@ -32,7 +32,7 @@
   border-radius: 20px;
   height: 196px;
   width: calc(var(--one-card-width) - 20px);
-  /* temp color */
+  /* temp color - para probar */
   /* background-color: white; */
   background-color: black;
 }
@@ -52,9 +52,6 @@
   padding: 0 10px;
 }
 
-video {
-}
-
 /* FILM ICONS */
 
 /* rate icon */
@@ -62,7 +59,6 @@ video {
   position: absolute;
   bottom: 15px;
   left: 17px;
-
   height: 37px;
   width: 37px;
   border-radius: 50%;
@@ -73,9 +69,6 @@ video {
   position: absolute;
   bottom: 23px;
   left: 21px;
-}
-
-.film-buttons {
 }
 
 /* favourite/star icon */
@@ -191,14 +184,16 @@ td {
     top: 33px;
   }
 
+  /* FILM INFO */
+
   /* film details */
   .film-details {
     margin-left: auto;
     margin-right: auto;
     width: var(--two-cards-width);
 
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
   }
 
   th {
@@ -258,6 +253,12 @@ td {
   /* vídeo */
   .film-player-video {
     top: 45px;
+  }
+
+  /* FILM INFO */
+  .film-details,
+  .film-synopsis {
+    width: var(--three-cards-width);
   }
 
   /* RELATED SECTION */
