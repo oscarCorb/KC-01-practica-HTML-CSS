@@ -71,19 +71,18 @@
 /* favourite/star icon */
 .star {
   position: absolute;
-  top: 272px;
-  right: 210px;
-  /* bottom: 0px;
-  left: 0px; */
+  bottom: 16px;
+  left: 70px;
+  color: var(--color-orange);
+  font-size: 35px;
 }
 
 .star-circle {
   position: absolute;
-  top: 267px;
-  right: 205px;
-  /* bottom: 0px;
-  left: 0px; */
+  bottom: 11px;
+  left: 65px;
   color: var(--color-floral-white);
+  font-size: 45px;
 }
 
 /* play icon */
@@ -91,7 +90,6 @@
   position: absolute;
   right: 16px;
   bottom: 7px;
-
   font-size: 35px;
   color: var(--color-floral-white);
 }
