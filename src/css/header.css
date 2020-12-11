@@ -38,10 +38,6 @@
   margin-right: 5px;
 }
 
-input:focus {
-  outline: none;
-}
-
 /* navigation menu */
 .nav-bar-tactile {
   background-color: #fffcf2;

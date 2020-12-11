@@ -46,6 +46,11 @@ a:hover {
   color: var(--color-orange);
 }
 
+input:focus,
+video:focus {
+  outline: none;
+}
+
 .material-icons {
   color: #252422;
   text-align: center;
