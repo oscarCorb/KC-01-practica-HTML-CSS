@@ -10,7 +10,6 @@
 main {
   display: flex;
   justify-content: center;
-
   /* just for testing */
   margin-top: 83px;
 }
@@ -18,15 +17,57 @@ main {
 .log-in-wrapper {
   width: 100%;
   margin: 0 20px;
-  max-width: 500px;
+  max-width: 540px;
+  position: relative;
 }
 
 /* TOP BAR */
 .top-bar {
-  height: 85px;
+  height: 93px;
   background-color: var(--color-black-magic);
   border-radius: 20px 20px 0 0;
   border-bottom: 4px solid var(--color-stark-white);
+  position: relative;
+}
+
+.top-bar-border {
+  height: 89px;
+  border-right: 5px solid var(--color-black-magic);
+  border-radius: 20px 20px 0 0;
+  position: absolute;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.line-1 {
+  height: 34px;
+  width: 25px;
+  position: absolute;
+  top: 9px;
+  left: 25px;
+  transform: skew(18deg);
+  background-color: var(--color-stark-white);
+  box-shadow: 50px 0 var(--color-stark-white), 100px 0 var(--color-stark-white),
+    150px 0 var(--color-stark-white), 200px 0 var(--color-stark-white),
+    250px 0 var(--color-stark-white), 300px 0 var(--color-stark-white),
+    350px 0 var(--color-stark-white), 400px 0 var(--color-stark-white),
+    450px 0 var(--color-stark-white);
+}
+
+.line-2 {
+  height: 34px;
+  width: 25px;
+  position: absolute;
+  top: 49px;
+  left: 25px;
+  transform: skew(-18deg);
+  background-color: var(--color-stark-white);
+  box-shadow: 50px 0 var(--color-stark-white), 100px 0 var(--color-stark-white),
+    150px 0 var(--color-stark-white), 200px 0 var(--color-stark-white),
+    250px 0 var(--color-stark-white), 300px 0 var(--color-stark-white),
+    350px 0 var(--color-stark-white), 400px 0 var(--color-stark-white),
+    450px 0 var(--color-stark-white);
 }
 
 /* FORM BAR */
@@ -110,6 +151,8 @@ main {
   background-color: var(--color-floral-white);
   border-radius: 50%;
   vertical-align: middle;
+
+  /* ver si este código es necesario o es antiguo */
   -webkit-appearance: none;
   outline: none;
   cursor: pointer;
@@ -167,9 +210,58 @@ main {
   margin-top: 70px;
 }
 
+@media (min-width: 560px) {
+  .log-in-wrapper {
+    max-width: 520px;
+  }
+
+  .line-1 {
+    background-color: var(--color-floral-white);
+    box-shadow: 50px 0 var(--color-floral-white),
+      100px 0 var(--color-floral-white), 150px 0 var(--color-floral-white),
+      200px 0 var(--color-floral-white), 250px 0 var(--color-floral-white),
+      300px 0 var(--color-floral-white), 350px 0 var(--color-floral-white),
+      400px 0 var(--color-floral-white), 450px 0 var(--color-floral-white);
+  }
+
+  .line-2 {
+    background-color: var(--color-floral-white);
+        box-shadow: 50px 0 var(--color-floral-white),
+      100px 0 var(--color-floral-white), 150px 0 var(--color-floral-white),
+      200px 0 var(--color-floral-white), 250px 0 var(--color-floral-white),
+      300px 0 var(--color-floral-white), 350px 0 var(--color-floral-white),
+      400px 0 var(--color-floral-white), 450px 0 var(--color-floral-white);
+  }
+
 @media (min-width: 684px) {
+  .log-in-wrapper {
+    max-width: 550px;
+  }
+
   .top-bar {
     height: 160px;
+  }
+
+  .line-1 {
+    height: 58px;
+    width: 40px;
+    top: 20px;
+    background-color: var(--color-floral-white);
+    box-shadow: 75px 0 var(--color-floral-white),
+      150px 0 var(--color-floral-white), 225px 0 var(--color-floral-white),
+      300px 0 var(--color-floral-white), 370px 0 var(--color-floral-white),
+      450px 0 var(--color-floral-white);
+  }
+
+  .line-2 {
+    height: 58px;
+    width: 40px;
+    top: 88px;
+    background-color: var(--color-floral-white);
+    box-shadow: 75px 0 var(--color-floral-white),
+      150px 0 var(--color-floral-white), 225px 0 var(--color-floral-white),
+      300px 0 var(--color-floral-white), 370px 0 var(--color-floral-white),
+      450px 0 var(--color-floral-white);
   }
 
   .log-in-form label {
@@ -192,7 +284,8 @@ main {
   .log-in-btn input {
     font-size: 1rem;
   }
-}
 
-@media (min-width: 1014px) {
+  .bottom-bar {
+    height: 40px;
+  }
 }
