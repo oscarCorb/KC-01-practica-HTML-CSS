@@ -38,15 +38,14 @@ h3 {
   margin: 0;
 }
 
-a,
-a:visited {
+a {
   text-decoration: none;
-  /* color: var(--color-orange); */
+  color: initial;
 }
 
-/* #logo {
-  color: red;
-} */
+a:visited {
+  text-decoration: none;
+}
 
 a:hover {
   text-decoration: underline;
@@ -64,6 +63,12 @@ video:focus {
   text-align: center;
 }
 
+.material-icons:hover,
 .social-icons i:hover {
   color: var(--color-orange);
+}
+
+/* Usar esto en más elementos de la web (los logos, etc) */
+.center {
+  text-align: center;
 }
