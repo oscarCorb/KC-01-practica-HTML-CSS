@@ -26,50 +26,47 @@ main {
   height: 85px;
   background-color: var(--color-black-magic);
   border-radius: 20px 20px 0 0;
-  border-bottom: solid 5px var(--color-stark-white);
+  border-bottom: 4px solid var(--color-stark-white);
 }
 
 /* FORM BAR */
-form {
+.log-in-form {
   display: table;
   width: 100%;
 }
 
-form .form-row {
+.log-in-form .form-row {
   display: table-row;
   background-color: var(--color-space-shuttle);
 }
 
-label {
-  font-size: 0.9rem;
+.log-in-form label {
+  font-size: 1rem;
   display: table-cell;
-
   padding-left: 10px;
   color: var(--color-floral-white);
   background-color: var(--color-black-magic);
-
-  line-height: 23px;
-  border-bottom: solid 2px var(--color-stark-white);
+  line-height: 26px;
+  border-bottom: 4px solid var(--color-stark-white);
 }
 
-input {
+.log-in-form input {
   display: table-cell;
   width: 100%;
   color: var(--color-floral-white);
   background-color: var(--color-space-shuttle);
   border: none;
-
-  line-height: 23px;
-  border-bottom: solid 2px var(--color-stark-white);
+  line-height: 26px;
+  border-bottom: 4px solid var(--color-stark-white);
 }
 
 /* FOTGOT PASSWORD BAR */
 .forgot-bar {
-  font-size: 0.9rem;
-  line-height: 23px;
+  font-size: 1rem;
+  line-height: 26px;
   background-color: var(--color-black-magic);
   padding-left: 10px;
-  border-bottom: solid 2px var(--color-stark-white);
+  border-bottom: 4px solid var(--color-stark-white);
 }
 
 .forgot-bar a {
@@ -80,29 +77,81 @@ input {
 .date-links-bar {
   display: flex;
   justify-content: space-between;
-  align-content: space-around;
+  text-align: center;
+  align-items: center;
+  /* align-content: space-around; */
   line-height: 50px;
   font-size: 0.9rem;
   color: var(--color-floral-white);
   background-color: var(--color-black-magic);
-  border-bottom: solid 2px var(--color-stark-white);
+  border-bottom: 4px solid var(--color-stark-white);
 }
 
-.date-links-bar .item {
+.date,
+.remember {
   padding-left: 10px;
   padding-right: 10px;
 }
 
+/* remember me form */
 .date-links-bar .remember {
-  border-left: solid 2px;
-  border-right: solid 2px;
-  border-color: var(--color-stark-white);
-  /* border-left-color: white; */
+  border-left: 5px solid var(--color-stark-white);
+  border-right: 5px solid var(--color-stark-white);
 }
 
-.date-links-bar .log-in-btn {
-  color: var(--color-floral-white);
+[type="checkbox"] {
+  vertical-align: middle;
+}
+
+/*  COPIADO DE STACK OVERFLOW */
+.remember-form input {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-floral-white);
+  border-radius: 50%;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.remember-form input:checked {
   background-color: var(--color-orange);
+}
+/*  COPIADO DE STACK OVERFLOW */
+
+/* .date-links-bar .log-in-btn {
+  border-left: 5px solid var(--color-stark-white);
+  background-color: var(--color-orange);
+  
+} */
+
+/* .date-links-bar .log-in-btn a {
+  display: block;
+  color: var(--color-floral-white);
+} */
+
+.date-links-bar .log-in-btn {
+  flex-grow: 1;
+  background-color: var(--color-orange);
+  /* padding-left: 0px;
+  padding-right: 0px; */
+}
+
+.submit-form input {
+  background-color: var(--color-orange);
+  color: var(--color-floral-white);
+  font-family: "Anonymous Pro", monospace;
+  border: none;
+  /* line-height: 48px; */
+  /* line-height: 100%; */
+
+  cursor: pointer;
+  width: 100%;
+
+  /* padding-right: 10px;
+  padding-left: 10px; */
+  /* text-align: center; */
 }
 
 /* BOTTOM BAR */
@@ -114,14 +163,36 @@ input {
 
 .text {
   color: var(--color-floral-white);
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-top: 70px;
 }
 
-/*
-  @tgb, una duda sobre el logo y las buenas prácticas.
+@media (min-width: 684px) {
+  .top-bar {
+    height: 160px;
+  }
 
-  Mi logo es texto y no sé si ponerlo directamente en un anchor tag, o en un anchor que esté dentro de un div, en un div que esté dentro de un anchor... 
-  
-  En fin, no sé cuál es la mejor manera para este caso.
-*/
+  .log-in-form label {
+    line-height: 40px;
+  }
+
+  .log-in-form input {
+    line-height: 40px;
+  }
+
+  .forgot-bar {
+    line-height: 40px;
+  }
+
+  .date-links-bar {
+    line-height: 80px;
+    font-size: 1rem;
+  }
+
+  .log-in-btn input {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1014px) {
+}

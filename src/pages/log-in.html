@@ -39,7 +39,7 @@
                     </p>
                     <p class="form-row">
                         <label for="password">password</label>
-                        <input type="password" id="password" name="password" value="password" required>
+                        <input type="password" id="password" name="password" required>
                     </p>
                 </form>
             </div>
@@ -48,8 +48,18 @@
             </div>
             <div class="date-links-bar">
                 <div class="item date">13.12.1984</div>
-                <div class="item remember">remember me</div>
-                <a href="../index.html"><div class="item log-in-btn">LOG IN</div></a>
+                <div class="item remember">
+                    <form id="remember-form" class="remember-form">
+                        <input type="checkbox" id="remember" name="remember" form="log-in-form">
+                        <label for="remember">remember me</label>
+                    </form>
+                </div>
+                <div class="item log-in-btn">
+                    <form id="submit-form" class="submit-form">
+                        <!-- <a href="../index.html">LOG IN</a> -->
+                        <input type="submit" name="submit" value="LOG IN" form="log-in-form">
+                    </form>
+                </div>
                 
             </div>
             <div class="bottom-bar"></div>
