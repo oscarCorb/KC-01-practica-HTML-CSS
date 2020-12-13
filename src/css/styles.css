@@ -1,5 +1,4 @@
 :root {
-  /* --mobile-width: 300px; */
   --navbar-mobile-heigth: 38px;
   --navbar-tablet-heigth: 54px;
   --one-card-width: 312px;
@@ -20,11 +19,6 @@
 body {
   font-family: "Anonymous Pro", monospace;
   background-color: var(--color-stark-white);
-
-  /*
-  ojo con esto, lo he desactivado por lo de los puntos blancos pero podría
-  afectar a algún otro elemento que esté usando la pos. relativa del body */
-  /* position: relative; */
 }
 
 header {
@@ -53,7 +47,6 @@ h1 {
 h2,
 h3 {
   font-size: 1rem;
-  /* font-weight: normal; */
   margin: 0;
 }
 
@@ -87,8 +80,6 @@ video:focus {
   color: var(--color-orange);
 }
 
-/* Usar esto en más elementos de la web (los logos, etc)
-   Aunque haría falta otro para "margin: o auto" */
 .center {
   text-align: center;
 }
@@ -117,27 +108,6 @@ video:focus {
     -525px 0 var(--color-floral-white), 560px 0 var(--color-floral-white),
     -560px 0 var(--color-floral-white), 595px 0 var(--color-floral-white),
     -595px 0 var(--color-floral-white);
-  /* 630px 0 var(--color-floral-white), -630px 0 var(--color-floral-white),
-    665px 0 var(--color-floral-white), 700px 0 var(--color-floral-white),
-    -665px 0 var(--color-floral-white), -700px 0 var(--color-floral-white),
-    735px 0 var(--color-floral-white), 770px 0 var(--color-floral-white),
-    -735px 0 var(--color-floral-white), -770px 0 var(--color-floral-white),
-    805px 0 var(--color-floral-white), 840px 0 var(--color-floral-white),
-    -805px 0 var(--color-floral-white), -840px 0 var(--color-floral-white),
-    875px 0 var(--color-floral-white), 910px 0 var(--color-floral-white),
-    -875px 0 var(--color-floral-white), -910px 0 var(--color-floral-white),
-    945px 0 var(--color-floral-white), 980px 0 var(--color-floral-white),
-    -945px 0 var(--color-floral-white), -980px 0 var(--color-floral-white),
-    1015px 0 var(--color-floral-white), 1050px 0 var(--color-floral-white),
-    -1015px 0 var(--color-floral-white), -1050px 0 var(--color-floral-white),
-    1085px 0 var(--color-floral-white), 1120px 0 var(--color-floral-white),
-    -1085px 0 var(--color-floral-white), -1120px 0 var(--color-floral-white),
-    1155px 0 var(--color-floral-white), 1190px 0 var(--color-floral-white),
-    -1155px 0 var(--color-floral-white), -1190px 0 var(--color-floral-white),
-    1225px 0 var(--color-floral-white), 1260px 0 var(--color-floral-white),
-    -1225px 0 var(--color-floral-white), -1260px 0 var(--color-floral-white),
-    1295px 0 var(--color-floral-white), 1330px 0 var(--color-floral-white),
-    -1295px 0 var(--color-floral-white), -1330px 0 var(--color-floral-white); */
 }
 
 .global-white-squares.top {

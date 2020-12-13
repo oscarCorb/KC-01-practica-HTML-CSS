@@ -1,5 +1,4 @@
 footer {
-  /* background-color: black; */
   height: 213px;
   text-align: center;
   margin-bottom: 30px;
@@ -15,11 +14,6 @@ footer {
   color: var(--color-floral-white);
   padding: 3px;
 }
-
-/* .legal-links {
-  display: flex;
-  justify-content: center;
-} */
 
 .legal-links ul {
   margin: 0;

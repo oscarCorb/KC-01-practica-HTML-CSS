@@ -1,8 +1,8 @@
 .home-title {
-  /* color: var(--color-floral-white); */
   background-color: var(--color-black-magic);
   padding-top: 30px;
   padding-bottom: 0;
+  text-transform: uppercase;
 }
 
 .films-section {
@@ -20,17 +20,12 @@
 
 .film-container {
   position: relative;
-  /* margin: 0 auto; */
 }
 
 .film-content {
   display: flex;
   margin: 0 auto;
-  /* Tamaño original */
-  /* height: 245px;
-  max-width: 240px; */
   height: 319px;
-  /* max-width: 312px; */
   max-width: var(--one-card-width);
   margin-bottom: 16px;
   border-radius: 20px;
@@ -70,9 +65,7 @@
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  /* object-fit: cover; */
-
-  /* creo que esto no tiene ningún efecto => */
+  object-fit: cover;
   object-position: center top;
 }
 
@@ -112,8 +105,6 @@ table {
   font-size: 0.9rem;
   text-align: left;
   padding: 10px 0;
-
-  /* margin: 0; */
 }
 
 th {
@@ -136,14 +127,9 @@ th {
   font-size: 1rem;
   width: calc(var--(--one-card-width) - 20px);
   max-height: 245px;
-  /* overflow: scroll; */
   line-height: 1;
   border-radius: 20px;
   padding: 0 25px;
-
-  /* transition */
-
-  /* DESACTIVADO TEMPORALMENTE PARA PONER VER LA INFO */
 
   transition: all 500ms ease-out;
   opacity: 0;
@@ -153,11 +139,8 @@ th {
 .film-content:hover .film-info {
   opacity: 1;
   visibility: visible;
-  /* cursor: pointer; */
-
   color: black;
   background-color: #fff;
-
   height: 319px;
 }
 
@@ -167,7 +150,6 @@ th {
   color: var(--color-orange);
   height: 450px;
   text-transform: uppercase;
-  text-align: center;
   width: 100%;
 }
 
@@ -181,10 +163,6 @@ th {
 [class*="arrow"] {
   font-size: 3rem;
 }
-
-/* .arrow-filter {
-  font-size: 2.5rem;
-} */
 
 .genre-title {
   margin-top: 0;
@@ -212,8 +190,6 @@ th {
   display: none;
 }
 
-/* @media (min-width: 480px) { */
-
 /* TABLET */
 @media (min-width: 684px) {
   /* SECTION: LISTA DE PELÍCULAS */
@@ -225,32 +201,12 @@ th {
     padding-top: 30px;
   }
 
-  /* .border-white-squares {
-    left: 26px;
-  } */
-
-  .film-content img {
-    /* position: relative; */
-    /* z-index: 0; */
-
-    /* ESTILOS MOBILE
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    object-position: center top; */
-  }
-
   .film-content {
     position: relative;
   }
 
   .film-content:hover img {
     visibility: hidden;
-  }
-
-  .film-info-text {
-    /* 
-    overflow: hidden; */
   }
 
   /* GENRE FILTER SECTION */
@@ -301,14 +257,8 @@ th {
     color: var(--color-space-shuttle);
     font-size: 1.2rem;
     letter-spacing: 1.8px;
-
-    /* esto quita los bullets points */
     display: inline;
   }
-
-  /* .genre-list a:first-child {
-    font-weight: bold;
-  } */
 
   #test-orange {
     color: var(--color-orange);
@@ -331,16 +281,3 @@ th {
     border-radius: 30px;
   }
 }
-
-/*
-ESTO NO SIRVE PARA DISPOSITIVOS TÁCTILES
-PERO SE PODRÁ USAR PARA ESCRITORIO
-=> los botones laterales de la peli filtrada se
-ponen grises y grandes al hacer hover
-
-.filtered-films-wrapper .material-icons {
-  padding: 80px 10px;
-}
-.filtered-films-wrapper .material-icons:hover {
-  background-color: grey;
-} */

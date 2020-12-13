@@ -11,14 +11,6 @@
   letter-spacing: 4.2px;
   font-weight: lighter;
   color: var(--color-black-magic);
-
-  text-align: center;
-}
-
-/* esto creo que no tiene ningún efecto => */
-.logo:hover {
-  text-decoration: none;
-  color: initial;
 }
 
 /* MY ACCOUNT ICON */
@@ -46,7 +38,6 @@
   background-color: #fffcf2;
   min-width: 50px;
   display: inline-block;
-  text-align: center;
 }
 
 .header-styles {
@@ -141,7 +132,6 @@
 
   /* navigation menu */
   .navbar-wrapper-desktop {
-    /* ojo, esto son solo los botones, sin el input */
     display: initial;
   }
 
@@ -153,15 +143,13 @@
   .navbar-wrapper-desktop li {
     display: inline;
     width: 165px;
-    text-align: center;
+
     background-color: #fffcf2;
     margin-left: 10px;
   }
 
   .navbar-wrapper-desktop a {
     line-height: var(--navbar-tablet-heigth);
-    /* color: var(--color-black-magic); */
-    text-align: center;
 
     padding-top: calc(var(--navbar-tablet-heigth) / 2);
     padding-bottom: calc(var(--navbar-tablet-heigth) / 2);

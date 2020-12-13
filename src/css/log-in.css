@@ -10,8 +10,6 @@
 main {
   display: flex;
   justify-content: center;
-
-  /* just for testing */
   margin-top: 83px;
 }
 
@@ -122,7 +120,6 @@ main {
   justify-content: space-between;
   text-align: center;
   align-items: center;
-  /* align-content: space-around; */
   line-height: 50px;
   font-size: 0.9rem;
   color: var(--color-floral-white);
@@ -161,22 +158,9 @@ main {
   background-color: var(--color-orange);
 }
 
-/* .date-links-bar .log-in-btn {
-  border-left: 5px solid var(--color-stark-white);
-  background-color: var(--color-orange);
-  
-} */
-
-/* .date-links-bar .log-in-btn a {
-  display: block;
-  color: var(--color-floral-white);
-} */
-
 .date-links-bar .log-in-btn {
   flex-grow: 1;
   background-color: var(--color-orange);
-  /* padding-left: 0px;
-  padding-right: 0px; */
 }
 
 .submit-form input {
@@ -184,15 +168,8 @@ main {
   color: var(--color-floral-white);
   font-family: "Anonymous Pro", monospace;
   border: none;
-  /* line-height: 48px; */
-  /* line-height: 100%; */
-
   cursor: pointer;
   width: 100%;
-
-  /* padding-right: 10px;
-  padding-left: 10px; */
-  /* text-align: center; */
 }
 
 /* BOTTOM BAR */

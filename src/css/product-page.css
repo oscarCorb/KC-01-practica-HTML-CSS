@@ -26,18 +26,13 @@
   border-radius: 20px;
   height: 196px;
   width: calc(var(--one-card-width) - 20px);
-  /* temp color - para probar */
-  /* background-color: white; */
   background-color: black;
 }
 
 .film-player-img {
-  /* margin: 7px; */
-  /* 16px queda bien arriba */
   margin: 16px 8px 0px 8px;
   border-radius: 15px;
   width: calc(var(--one-card-width) - 30px);
-  /* nota: overflow necesario para que border-radius funcione */
   overflow: hidden;
 }
 
@@ -141,7 +136,6 @@ td {
 
 .related-title {
   text-transform: uppercase;
-  text-align: center;
   padding: 30px 0;
 }
 
@@ -159,15 +153,12 @@ td {
 
   /* film player */
   .film-player-border-outer {
-    /* origianl 323 */
     height: 473px;
     width: var(--two-cards-width);
   }
 
   .film-player-border-inner {
-    /* origianl 246 */
     height: 396px;
-
     width: calc(var(--two-cards-width) - 20px);
   }
 
@@ -188,9 +179,6 @@ td {
     margin-left: auto;
     margin-right: auto;
     width: var(--two-cards-width);
-
-    /* display: flex;
-    justify-content: flex-start; */
   }
 
   th {
@@ -208,7 +196,6 @@ td {
   .related-films {
     display: flex;
     justify-content: space-between;
-    /* gap: 1rem; */
   }
 
   .filter-arrow-left,
@@ -264,25 +251,3 @@ td {
     display: initial;
   }
 }
-
-/* lo viejo de arriba */
-
-/*
-.film-player-border-inner {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  border-radius: 20px;
-  height: 246px;
-  width: calc(var(--one-card-width) - 20px);
-  background-color: var(--color-black-magic);
-}
-
-.film-player-img {
-  margin: 7px;
-  border-radius: 15px;
-  width: calc(var(--one-card-width) - 30px);
-  overflow: hidden;
-}
-
-/* FILM ICONS */
