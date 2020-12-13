@@ -36,7 +36,7 @@
   position: relative;
 }
 
-.white-squares {
+.film-white-squares {
   height: 17px;
   width: 17px;
   background-color: var(--color-floral-white);
@@ -50,11 +50,11 @@
   left: 26px;
 }
 
-.white-squares.line-1 {
+.film-white-squares.line-1 {
   top: 10px;
 }
 
-.white-squares.line-2 {
+.film-white-squares.line-2 {
   bottom: 26px;
 }
 

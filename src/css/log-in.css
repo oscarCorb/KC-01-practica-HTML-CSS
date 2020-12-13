@@ -10,6 +10,7 @@
 main {
   display: flex;
   justify-content: center;
+
   /* just for testing */
   margin-top: 83px;
 }
@@ -207,6 +208,7 @@ main {
   margin-top: 70px;
 }
 
+/* TABLET */
 @media (min-width: 560px) {
   .log-in-wrapper {
     max-width: 520px;
@@ -223,13 +225,15 @@ main {
 
   .line-2 {
     background-color: var(--color-floral-white);
-        box-shadow: 50px 0 var(--color-floral-white),
+    box-shadow: 50px 0 var(--color-floral-white),
       100px 0 var(--color-floral-white), 150px 0 var(--color-floral-white),
       200px 0 var(--color-floral-white), 250px 0 var(--color-floral-white),
       300px 0 var(--color-floral-white), 350px 0 var(--color-floral-white),
       400px 0 var(--color-floral-white), 450px 0 var(--color-floral-white);
   }
+}
 
+/* DESKTOP */
 @media (min-width: 684px) {
   .log-in-wrapper {
     max-width: 550px;

@@ -18,9 +18,22 @@
 }
 
 body {
-  /* font-family: "Courier New", Courier, monospace; */
   font-family: "Anonymous Pro", monospace;
   background-color: var(--color-stark-white);
+
+  /*
+  ojo con esto, lo he desactivado por lo de los puntos blancos pero podría
+  afectar a algún otro elemento que esté usando la pos. relativa del body */
+  /* position: relative; */
+}
+
+header {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -68,9 +81,63 @@ video:focus {
   color: var(--color-orange);
 }
 
-/* Usar esto en más elementos de la web (los logos, etc) */
+/* Usar esto en más elementos de la web (los logos, etc)
+   Aunque haría falta otro para "margin: o auto" */
 .center {
   text-align: center;
 }
 
 /* white squares */
+.global-white-squares {
+  margin: 0 auto;
+  height: 17px;
+  width: 17px;
+  background-color: var(--color-floral-white);
+  box-shadow: 35px 0 var(--color-floral-white),
+    -35px 0 var(--color-floral-white), 70px 0 var(--color-floral-white),
+    -70px 0 var(--color-floral-white), 105px 0 var(--color-floral-white),
+    -105px 0 var(--color-floral-white), 140px 0 var(--color-floral-white),
+    -140px 0 var(--color-floral-white), 175px 0 var(--color-floral-white),
+    -175px 0 var(--color-floral-white), 210px 0 var(--color-floral-white),
+    -210px 0 var(--color-floral-white), 245px 0 var(--color-floral-white),
+    -245px 0 var(--color-floral-white), 280px 0 var(--color-floral-white),
+    -280px 0 var(--color-floral-white), 315px 0 var(--color-floral-white),
+    -315px 0 var(--color-floral-white), 350px 0 var(--color-floral-white),
+    -350px 0 var(--color-floral-white), 385px 0 var(--color-floral-white),
+    -385px 0 var(--color-floral-white), 420px 0 var(--color-floral-white),
+    -420px 0 var(--color-floral-white), 455px 0 var(--color-floral-white),
+    -455px 0 var(--color-floral-white), 490px 0 var(--color-floral-white),
+    -490px 0 var(--color-floral-white), 525px 0 var(--color-floral-white),
+    -525px 0 var(--color-floral-white), 560px 0 var(--color-floral-white),
+    -560px 0 var(--color-floral-white), 595px 0 var(--color-floral-white),
+    -595px 0 var(--color-floral-white);
+  /* 630px 0 var(--color-floral-white), -630px 0 var(--color-floral-white),
+    665px 0 var(--color-floral-white), 700px 0 var(--color-floral-white),
+    -665px 0 var(--color-floral-white), -700px 0 var(--color-floral-white),
+    735px 0 var(--color-floral-white), 770px 0 var(--color-floral-white),
+    -735px 0 var(--color-floral-white), -770px 0 var(--color-floral-white),
+    805px 0 var(--color-floral-white), 840px 0 var(--color-floral-white),
+    -805px 0 var(--color-floral-white), -840px 0 var(--color-floral-white),
+    875px 0 var(--color-floral-white), 910px 0 var(--color-floral-white),
+    -875px 0 var(--color-floral-white), -910px 0 var(--color-floral-white),
+    945px 0 var(--color-floral-white), 980px 0 var(--color-floral-white),
+    -945px 0 var(--color-floral-white), -980px 0 var(--color-floral-white),
+    1015px 0 var(--color-floral-white), 1050px 0 var(--color-floral-white),
+    -1015px 0 var(--color-floral-white), -1050px 0 var(--color-floral-white),
+    1085px 0 var(--color-floral-white), 1120px 0 var(--color-floral-white),
+    -1085px 0 var(--color-floral-white), -1120px 0 var(--color-floral-white),
+    1155px 0 var(--color-floral-white), 1190px 0 var(--color-floral-white),
+    -1155px 0 var(--color-floral-white), -1190px 0 var(--color-floral-white),
+    1225px 0 var(--color-floral-white), 1260px 0 var(--color-floral-white),
+    -1225px 0 var(--color-floral-white), -1260px 0 var(--color-floral-white),
+    1295px 0 var(--color-floral-white), 1330px 0 var(--color-floral-white),
+    -1295px 0 var(--color-floral-white), -1330px 0 var(--color-floral-white); */
+}
+
+.global-white-squares.top {
+  border-radius: 0 0 5px 5px;
+}
+
+.global-white-squares.bottom {
+  border-radius: 5px 5px 0 0;
+}
