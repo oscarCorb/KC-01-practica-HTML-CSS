@@ -44,7 +44,7 @@
         </div>
         <div class="top-bar-border"></div>
         <div class="form-bar">
-          <form id="log-in-form" class="log-in-form">
+          <form action="../index.html" method="GET" id="log-in-form" class="log-in-form">
             <p class="form-row">
               <label for="email">email</label>
               <input type="email" id="email" name="email" required />
@@ -61,34 +61,16 @@
         <div class="date-links-bar">
           <div class="item date">13.12.1984</div>
           <div class="item remember">
-            <form id="remember-form" class="remember-form">
-              <input
-                type="checkbox"
-                id="remember"
-                name="remember"
-                form="log-in-form"
-              />
-              <label for="remember">remember me</label>
-            </form>
+            <div class="remember-form">
+              <input form="log-in-form" type="checkbox" name="remember"/>
+              <label form="log-in-form" for="remember">remember me</label>
+            </div>
           </div>
+          
           <div class="item log-in-btn">
-            <form
-              target="_blank"
-              action="../index.html"
-              method="POST"
-              id="submit-form"
-              class="submit-form"
-            >
-              <!-- <a href="../index.html">LOG IN</a> -->
-              <!-- <a href="../index.html"> -->
-              <input
-                type="submit"
-                name="submit"
-                value="LOG IN"
-                form="log-in-form"
-              />
-              <!-- </a> -->
-            </form>
+            <div class="submit-form">
+              <input form="log-in-form" type="submit" name="submit" value="LOG IN" />
+            </div>
           </div>
         </div>
         <div class="bottom-bar"></div>
