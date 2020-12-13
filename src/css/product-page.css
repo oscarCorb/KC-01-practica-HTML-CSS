@@ -3,12 +3,6 @@
   background-color: var(--color-black-magic);
 }
 
-.film-title {
-  padding: 25px;
-  text-align: center;
-  color: var(--color-floral-white);
-}
-
 /* film player */
 .film-player {
   display: flex;

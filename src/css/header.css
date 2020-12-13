@@ -34,8 +34,7 @@
 
 /* search bar */
 .search-bar input {
-  /* font-family: "Courier New", Courier, monospace; */
-  font-family: "Anonymous Pro", monospace;
+  font-family: "Anonymous Pro", monospace, "Courier New", Courier;
   font-size: 1rem;
   padding: 0 15px;
   width: calc(var(--one-card-width) - 55px);
@@ -112,7 +111,7 @@
   .my-account {
     position: absolute;
     top: 35px;
-    right: 150px;
+    right: 7.5rem;
     display: flex;
     align-items: center;
   }

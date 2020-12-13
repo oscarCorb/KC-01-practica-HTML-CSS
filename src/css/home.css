@@ -1,3 +1,10 @@
+.home-title {
+  /* color: var(--color-floral-white); */
+  background-color: var(--color-black-magic);
+  padding-top: 30px;
+  padding-bottom: 0;
+}
+
 .films-section {
   background-color: var(--color-black-magic);
   display: flex;
