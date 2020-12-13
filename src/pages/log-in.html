@@ -1,77 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome | 8MMOVIES</title>
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
-    
-    <!-- material icons -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/0991185c0b.js" crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/log-in.css">
+    <!-- material icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/0991185c0b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/log-in.css" />
     <!-- <link rel="stylesheet" href="../css/header.css"> -->
     <!-- <link rel="stylesheet" href="../css/footer.css"> -->
-    
-</head>
-<body>
+  </head>
+  <body>
     <div id="logo" class="logo center">
-        <a href="/">8MMOVIES</a>
+      <a href="../index.html">8MMOVIES</a>
     </div>
-    
+
     <main>
-
-        <div class="log-in-wrapper">
-
-            <div class="top-bar">
-                <div class="line-1"></div>
-                <div class="line-2"></div>
-            </div>
-            <div class="top-bar-border"></div>
-            <div class="form-bar">
-                <form id="log-in-form" class="log-in-form">
-                    <p class="form-row">
-                        <label for="email">email</label>
-                        <input type="email" id="email" name="email" required>
-                    </p>
-                    <p class="form-row">
-                        <label for="password">password</label>
-                        <input type="password" id="password" name="password" required>
-                    </p>
-                </form>
-            </div>
-            <div class="forgot-bar">
-                <a href="../index.html">Forgot your password?</a>
-            </div>
-            <div class="date-links-bar">
-                <div class="item date">13.12.1984</div>
-                <div class="item remember">
-                    <form id="remember-form" class="remember-form">
-                        <input type="checkbox" id="remember" name="remember" form="log-in-form">
-                        <label for="remember">remember me</label>
-                    </form>
-                </div>
-                <div class="item log-in-btn">
-                    <form action="POST" id="submit-form" class="submit-form">
-                        <!-- <a href="../index.html">LOG IN</a> -->
-                        <input type="submit" name="submit" value="LOG IN" form="log-in-form">
-                    </form>
-                </div>
-                
-            </div>
-            <div class="bottom-bar"></div>
-
+      <div class="log-in-wrapper">
+        <div class="top-bar">
+          <div class="line-1"></div>
+          <div class="line-2"></div>
         </div>
+        <div class="top-bar-border"></div>
+        <div class="form-bar">
+          <form id="log-in-form" class="log-in-form">
+            <p class="form-row">
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" required />
+            </p>
+            <p class="form-row">
+              <label for="password">password</label>
+              <input type="password" id="password" name="password" required />
+            </p>
+          </form>
+        </div>
+        <div class="forgot-bar">
+          <a href="../index.html">Forgot your password?</a>
+        </div>
+        <div class="date-links-bar">
+          <div class="item date">13.12.1984</div>
+          <div class="item remember">
+            <form id="remember-form" class="remember-form">
+              <input
+                type="checkbox"
+                id="remember"
+                name="remember"
+                form="log-in-form"
+              />
+              <label for="remember">remember me</label>
+            </form>
+          </div>
+          <div class="item log-in-btn">
+            <form
+              target="_blank"
+              action="../index.html"
+              method="POST"
+              id="submit-form"
+              class="submit-form"
+            >
+              <!-- <a href="../index.html">LOG IN</a> -->
+              <!-- <a href="../index.html"> -->
+              <input
+                type="submit"
+                name="submit"
+                value="LOG IN"
+                form="log-in-form"
+              />
+              <!-- </a> -->
+            </form>
+          </div>
+        </div>
+        <div class="bottom-bar"></div>
+      </div>
     </main>
 
     <div class="text center">Enjoy the experience</div>
-    
-</body>
+  </body>
 </html>
