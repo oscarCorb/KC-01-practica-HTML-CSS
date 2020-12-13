@@ -99,6 +99,7 @@ main {
   border: none;
   line-height: 26px;
   border-bottom: 4px solid var(--color-stark-white);
+  padding-left: 12px;
 }
 
 /* FOTGOT PASSWORD BAR */
@@ -144,24 +145,20 @@ main {
   vertical-align: middle;
 }
 
-/*  COPIADO DE STACK OVERFLOW */
 .remember-form input {
+  outline: none;
+  vertical-align: middle;
+  border-radius: 50%;
+  cursor: pointer;
   width: 1rem;
   height: 1rem;
-  background-color: var(--color-floral-white);
-  border-radius: 50%;
-  vertical-align: middle;
-
-  /* ver si este código es necesario o es antiguo */
   -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
+  background-color: var(--color-floral-white);
 }
 
 .remember-form input:checked {
   background-color: var(--color-orange);
 }
-/*  COPIADO DE STACK OVERFLOW */
 
 /* .date-links-bar .log-in-btn {
   border-left: 5px solid var(--color-stark-white);
