@@ -4,14 +4,14 @@
   justify-content: center;
 }
 
-.films-wrapper {
+.film-collection-wrapper {
   padding: 20px;
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
 }
 
-.film-card {
+.film-content {
   display: flex;
   /* Tamaño original */
   /* height: 245px;
@@ -32,11 +32,11 @@
   /* box-shadow: 10px 10px 10px yellow; */
 }
 
-.film-wrapper {
+.film-container {
   position: relative;
 }
 
-.film-white-squares {
+.border-white-squares {
   height: 17px;
   width: 17px;
   background-color: var(--color-floral-white);
@@ -50,15 +50,15 @@
   left: 26px;
 }
 
-.film-white-squares.line-1 {
+.border-white-squares.line-top {
   top: 10px;
 }
 
-.film-white-squares.line-2 {
+.border-white-squares.line-bottom {
   bottom: 26px;
 }
 
-.film-card img {
+.film-content img {
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -68,7 +68,7 @@
   object-position: center top;
 }
 
-.star {
+.star-on {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -76,7 +76,7 @@
   font-size: 35px;
 }
 
-.star-circle {
+.star-circle-on {
   position: absolute;
   top: 0;
   right: 0;
@@ -84,6 +84,23 @@
   font-size: 45px;
 }
 
+.star-off {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: rgba(235, 94, 40, 0.1);
+  font-size: 35px;
+}
+
+.star-circle-off {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: rgba(255, 252, 242, 0.4);
+  font-size: 45px;
+}
+
+/* GENRE SECTION */
 .genre-filter-section {
   background-color: var(--color-floral-white);
   color: var(--color-orange);
@@ -138,7 +155,7 @@
 /* TABLET */
 @media (min-width: 684px) {
   /* SECTION: LISTA DE PELÍCULAS */
-  .films-wrapper {
+  .film-collection-wrapper {
     flex-direction: row;
     gap: 19px;
     justify-content: center;
@@ -146,7 +163,7 @@
     padding-top: 30px;
   }
 
-  .film-card img {
+  .film-content img {
     /* position: relative; */
     /* z-index: 0; */
 
@@ -157,7 +174,7 @@
     object-position: center top; */
   }
 
-  .film-card {
+  .film-content {
     position: relative;
   }
 
@@ -167,27 +184,32 @@
     font-size: 1rem;
     width: calc(var--(--one-card-width) - 20px);
     max-height: 245px;
-    overflow: scroll;
+    /* overflow: scroll; */
     line-height: 1;
     border-radius: 20px;
     padding: 0 25px;
 
     /* transition */
+
+    /* DESACTIVADO TEMPORALMENTE PARA PONER VER LA INFO */
+
     transition: all 500ms ease-out;
     opacity: 0;
     visibility: hidden;
   }
 
-  .film-card:hover .film-info {
+  .film-content:hover .film-info {
     opacity: 1;
     visibility: visible;
-    cursor: pointer;
+    /* cursor: pointer; */
 
     color: black;
     background-color: #fff;
+
+    height: 319px;
   }
 
-  .film-card:hover img {
+  .film-content:hover img {
     visibility: hidden;
   }
 
@@ -196,7 +218,29 @@
     overflow: hidden; */
   }
 
-  /* SECCIÓN: GENRE FILTER */
+  table {
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 10px 0;
+
+    /* margin: 0; */
+  }
+
+  th {
+    vertical-align: top;
+    padding-right: 5px;
+  }
+
+  .learn-more-link {
+    position: absolute;
+    padding: 5px 20px;
+    bottom: 10px;
+    right: 10px;
+    color: var(--color-orange);
+    font-weight: bold;
+  }
+
+  /* GENRE FILTER SECTION */
   .genre-filter-mobile {
     display: none;
   }
